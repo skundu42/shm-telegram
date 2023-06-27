@@ -1,4 +1,3 @@
-// require('dotenv').config()
 const fs = require('fs');
 let config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 global.config = config;
@@ -12,7 +11,7 @@ async function sendRequest(req, res, next) {
 }
 const bot = require('./bot');
 const express = require('express');
-const TOKEN = process.env.token;
+const TOKEN = `6086086260:AAGrZczQ0AZcF81pOcGzBXVTpwtNpcEpJxQ`;
 // const url = 'http://63.142.254.102:3000';
 // bot.setWebHook(`${url}/${TOKEN}`);
 

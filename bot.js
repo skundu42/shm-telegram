@@ -91,13 +91,13 @@ bot.onText(/^\/claim/, function(msg){
                                                                             console.log("tx", tx);
                                                                             database.setLastClaimTx(tx.hash, msg.from.id).then(
                                                                                 () => {
-                                                                                    bot.sendMessage(msg.chat.id, `Congrats ${prepend}. Your funds has been transferred \n\nhash: [tx](https://explorer-sphinx.shardeum.org/transaction/${tx.hash})`, {
+                                                                                    bot.sendMessage(msg.chat.id, `Congrats ${prepend}. Your funds has been transferred \n\nhash: [tx](https://explorer-dapps.shardeum.org/transaction/${tx.hash})`, {
                                                                                         parse_mode: 'markdown'
                                                                                     });
                                                                                 }
                                                                             ).catch(
                                                                                 () => {
-                                                                                    bot.sendMessage(msg.chat.id, `Congrats ${prepend}. Your funds has been transferred \n\nhash: [tx](https://explorer-sphinx.shardeum.org/transaction/${tx.hash})`, {
+                                                                                    bot.sendMessage(msg.chat.id, `Congrats ${prepend}. Your funds has been transferred \n\nhash: [tx](https://explorer-dapps.shardeum.org/transaction/${tx.hash})`, {
                                                                                         parse_mode: 'markdown'
                                                                                     });
                                                                                 }
@@ -190,13 +190,13 @@ bot.onText(/^\/claim/, function(msg){
                                                         console.log("tx", tx);
                                                         database.setLastClaimTx(tx.hash, msg.from.id).then(
                                                             () => {
-                                                                bot.sendMessage(msg.chat.id, `Congrats ${prepend}. Your funds has been transferred \n\nhash: [tx](https://explorer-sphinx.shardeum.org/transaction/${tx.hash})`, {
+                                                                bot.sendMessage(msg.chat.id, `Congrats ${prepend}. Your funds has been transferred \n\nhash: [tx](https://explorer-dapps.shardeum.org/transaction/${tx.hash})`, {
                                                                     parse_mode: 'markdown'
                                                                 });
                                                             }
                                                         ).catch(
                                                             () => {
-                                                                bot.sendMessage(msg.chat.id, `Congrats ${prepend}. Your funds has been transferred \n\nhash: [tx](https://explorer-sphinx.shardeum.org/transaction/${tx.hash})`, {
+                                                                bot.sendMessage(msg.chat.id, `Congrats ${prepend}. Your funds has been transferred \n\nhash: [tx](https://explorer-dapps.shardeum.org/transaction/${tx.hash})`, {
                                                                     parse_mode: 'markdown'
                                                                 });
                                                             }
