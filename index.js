@@ -2,8 +2,8 @@ const fs = require('fs');
 let config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
 global.config = config;
 
-const RateLimiter = require("limiter").RateLimiter;
-const limiter = new RateLimiter({ tokensPerInterval: 200, interval: "second" });
+// const RateLimiter = require("limiter").RateLimiter;
+// const limiter = new RateLimiter({ tokensPerInterval: 200, interval: "second" });
 
 async function sendRequest(req, res, next) {
     const remainingRequests = await limiter.removeTokens(1);
