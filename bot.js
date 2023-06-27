@@ -1,17 +1,19 @@
 const TelegramBot = require('node-telegram-bot-api');
 const ethers = require('ethers');
 const fs = require('fs');
-const bot = new TelegramBot(process.env.token, {polling: true});
+token='6086086260:AAGrZczQ0AZcF81pOcGzBXVTpwtNpcEpJxQ';
+const bot = new TelegramBot(token, {polling: true});
+pKey='40d186f1285456cc4b5af73ab82c0a2c8aa1b91ee8fb12b594efee9eee8684f4';
 
 const DB = require('./db');
 const database = new DB();
 const RPC_DATA = {
-    url: "https://sphinx.shardeum.org/",
-    chainID: 8082,
+    url: "https://dapps.shardeum.org",
+    chainID: 8081,
     name: "Shardeum Sphinx 1.X"
 };
 const provider = new ethers.JsonRpcProvider(RPC_DATA.url);
-const wallet = new ethers.Wallet(process.env.pKey, provider);
+const wallet = new ethers.Wallet(pKey, provider);
 
 bot.setMyCommands([
     {
