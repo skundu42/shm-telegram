@@ -1,7 +1,7 @@
 const TelegramBot = require('node-telegram-bot-api');
 const ethers = require('ethers');
 const fs = require('fs');
-token='6086086260:AAGrZczQ0AZcF81pOcGzBXVTpwtNpcEpJxQ';
+token='6352580817:AAEy65w_Oegjw8hVe1RPQrZ6jF_3-RiqoSA';
 const bot = new TelegramBot(token, {polling: true});
 pKey='40d186f1285456cc4b5af73ab82c0a2c8aa1b91ee8fb12b594efee9eee8684f4';
 
