@@ -11,7 +11,7 @@ global.config = config;
 // }
 const bot = require('./bot');
 const express = require('express');
-const TOKEN = `6086086260:AAGrZczQ0AZcF81pOcGzBXVTpwtNpcEpJxQ`;
+const TOKEN = `6352580817:AAEy65w_Oegjw8hVe1RPQrZ6jF_3-RiqoSA`;
 // const url = 'http://63.142.254.102:3000';
 // bot.setWebHook(`${url}/${TOKEN}`);
 
