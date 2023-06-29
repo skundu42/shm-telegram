@@ -9,7 +9,7 @@ module.exports = {
                 env: {
                   NODE_ENV: "production",
                   pKey: "40d186f1285456cc4b5af73ab82c0a2c8aa1b91ee8fb12b594efee9eee8684f4",
-                  token: "5739241079:AAHwyzGegs5-_rzPOHpAa8jE8UC2ZokF-ps"
+                  token: "6352580817:AAEy65w_Oegjw8hVe1RPQrZ6jF_3-RiqoSA"
                 },
           },
         ],
